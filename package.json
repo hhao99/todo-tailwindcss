@@ -6,7 +6,8 @@
   "scripts": {
     "snowpack": "snowpack",
     "start": "snowpack dev",
-    "build": "snowpack build"
+    "build": "snowpack build",
+    "test": "echo 'mock test'"
   },
   "keywords": [],
   "author": "",
