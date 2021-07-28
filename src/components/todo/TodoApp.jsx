@@ -11,7 +11,7 @@ const TodoApp = ()=> {
     <div className='flex flex-col mt-10'>
       <TodoContext.Provider value={{todoStore,todoListStore}} >
         <h3 className='text-xl text-blue-800'>
-          Todo App with MobX
+          Todo App!!
         </h3>
         <AddTodo />
         <TodoList />
