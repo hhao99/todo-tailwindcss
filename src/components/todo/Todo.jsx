@@ -5,16 +5,17 @@ import TodoContext from './TodoContext'
 
 const _Todo = ({todo,index})=> {
   const { todoListStore } = useContext(TodoContext)
-  const { toggle } = todoListStore
+  const { toggle, remove } = todoListStore
   return (
     <div 
-      className='pt-2 mt-2 item-center bg-grey-600 rounded-lg shadow-2xl'>
-      <span className='pt-1 text-grey-900'>{index} - </span>
+      className='card-content-profil pt-3 flex justify-between items-center'>
+      <span className='text-grey-900'>{todo.id}</span>
       <span className='text-indigo-900 hover:text-red-400'
         onClick={e=> {
           toggle(index)
         }}
       >{todo.task}</span>
+      <button onClick={ e=> remove(index) }>X</button>
     </div>
   )
 }

@@ -1,0 +1,10 @@
+FROM node:lts-alpine
+WORKDIR /app
+ENV PATH /app/node_modules/.bin/:$PATH
+RUN npm install --global yarn
+# install app dependencies
+COPY package.json ./
+RUN yarn
+
+COPY . ./
+CMD ["yarn","start"]

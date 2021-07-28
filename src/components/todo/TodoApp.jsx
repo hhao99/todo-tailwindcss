@@ -8,7 +8,7 @@ import { todoStore,todoListStore } from '../../store/TodoStore'
 
 const TodoApp = ()=> {
   return (
-    <div className='max-w-sm mx-auto p-4 bg-grey-200 rounded-lg shadow-xl'>
+    <div className='flex flex-col mt-10'>
       <TodoContext.Provider value={{todoStore,todoListStore}} >
         <h3 className='text-xl text-blue-800'>
           Todo App with MobX

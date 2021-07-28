@@ -15,6 +15,10 @@ class TodoListStore {
         console.log("toggle todo: " + this.todos[index])
         this.todos[index].done = !this.todos[index].done
     }
+    remove(index) {
+        console.log("delete todo: " + this.todos[index])
+        this.todos.splice(index,1)
+    }
 }
 class TodoStore {
     todo = {}

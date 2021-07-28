@@ -7,7 +7,7 @@ const _TodoList = ()=> {
   const { todoListStore } = useContext(TodoContext)
   const { todos } = todoListStore
   return (
-    <div className='inline:flex bg-grey-300'>
+    <div className='card'>
        <ul>{ todos.length === 0 ? 'no' : 
         todos.map( (todo,index) => <Todo key={todo.id} index={index} todo={todo}/>)
       }</ul>     
